@@ -1,0 +1,149 @@
+*{
+	scroll-behavior: smooth !important;
+}
+
+:root {
+  --osnovcolor: #4570FF;
+}
+
+body{
+    font-family: Montserrat, sans-serif !important;
+      overflow-x: hidden !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+li{
+    text-decoration: none !important;
+}
+
+.header_top{
+    background-color: var(--osnovcolor);
+    padding: 25px 0;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.phone_cont{
+    gap: 20px;
+}
+
+.phone_cont a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.btn_top_header{
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+.header_menu{
+    margin-top: 30px;
+}
+
+
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #070707;
+}
+
+.title_hero{
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--osnovcolor); 
+    margin-bottom: 30px;
+}
+
+.prg_hero{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #070707;
+    margin-bottom: 30px;
+}
+
+.btn_hero{
+    background: var(--osnovcolor);
+    border-radius: 20px;
+    border: none;
+    padding: 12px 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.section{
+    margin-top: 80px;
+}
+
+.section .container h2{
+    font-weight: 600;
+    font-size: 35px;
+    color: #070707;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+ 
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px !important;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+      
+        
+        .service-icon {
+            font-size: 50px;
+            color: var(--osnovcolor);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+
+/* Затемнение фотографий */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.4) contrast(1); /* Затемнение и усиление контраста */
+  transition: filter 0.5s ease;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #ffffff !important;
+}
