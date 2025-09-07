@@ -99,7 +99,7 @@ li{
 
 .section .container h2{
     font-weight: 600;
-    font-size: 35px;
+    font-size: 33px;
     color: #070707;
     text-align: center;
     margin-bottom: 30px;
@@ -460,14 +460,150 @@ li{
             padding: 40px;
             border-radius: 20px;
         }
+
+
+
+
+        /* Бургер меню */
         
 
-        .parners_container_wrapper{
-            display: flex;
-            gap: 50px;
-            align-items: center;
-            flex-wrap: wrap;
+        .mobile-menu-btn{
+            background: none;
+            border: none;
         }
+        
+
+        .bi-list{
+            font-size: 30px;
+            color: var(--osnovcolor);
+        }
+
+        .btn-close{
+             font-size: 20px;
+        }
+
+        .offcanvas-header {
+            padding: 0px !important;
+            display: flex !important;
+            justify-content: end !important;
+            margin-right: 20px !important;
+            margin-top: 20px !important;
+        }
+
+        .offcanvas-contacts a{
+            text-decoration: none;
+                color: #333;
+        }
+        
+        .offcanvas-body {
+            padding: 20px;
+        }
+        
+        .offcanvas-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+       
+        
+        .offcanvas-nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+            padding: 10px 0;
+            transition: color 0.3s;
+        }
+        
+    
+        
+        .offcanvas-contacts {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        
+
+        .parners_container_wrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); /* 4 колонки равной ширины */
+                gap: 50px; /* Расстояние между элементами */
+                align-items: center; /* Выравнивание по вертикали */
+            }
+
+
+        .modal-content{
+            padding: 25px;
+            border-radius: 20px !important;
+        }
+
+        .modal-dialog {
+        max-width: 550px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+     .phone_header_wrapper{
+            gap: 30px !important;
+        }
+
+    .title_form-modal{
+        font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+
+    .form-check {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+       .form-check-input {
+    border: 1px solid #798CAC !important;
+    width: 20px !important;
+    height: 20px !important;
+    cursor: pointer;
+}
+
+
+.form-check-label {
+    padding-left: 10px;
+}
+
+.form-check a {
+    font-weight: 400;
+    color: #000000;
+}
+
+
+.mobile-menu-btn{
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+   .col-10 img{
+           width: 100%;
+        height: 300px;
+        object-fit: cover;
+   }
+
+   .title_hero {
+    font-size: 50px;
+}
+
+.parners_container_wrapper {
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+}    
 
 
        
@@ -476,6 +612,23 @@ li{
             .card {
                 flex: 0 0 calc(50% - 20px);
             }
+
+            .col-sm-8 {
+                flex: 0 0 auto;
+                width: 100% !important;
+            }
+
+            .nav{
+                display: none !important;
+            }
+
+            .mobile-menu-btn{
+                display: block !important;
+            }
+
+            .carousel-item img {
+              height: 350px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -483,18 +636,49 @@ li{
                 width: 40px;
                 height: 40px;
             }
+
+            .parners_container_wrapper{
+                display: flex;
+                overflow: auto;
+            }
+
+            .slider-container {
+                margin-left: 0px;
+            }
+
+            .title_hero {
+                font-size: 45px;
+            }
         }
+
         
         @media (max-width: 576px) {
             .card {
                 flex: 0 0 100%;
             }
             
-        
+              .title_hero {
+                    font-size: 40px;
+                }
             
             .slider-arrow {
                 width: 35px;
                 height: 35px;
                 top: 40%;
+            }
+
+
+            .header_top .container{
+                flex-wrap: wrap !important;
+                 gap: 20px !important;
+            }
+
+            .section .container h2 {
+               font-size: 27px;
+            }
+
+
+            .carousel-caption a {
+                font-size: 23px;
             }
         }
