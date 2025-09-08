@@ -757,6 +757,12 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 font-size: 23px;
             }
 
+			.phone_cont a {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 
             .socila_media_wrapper a{
                 padding: 10px 120px;
@@ -769,3 +775,4 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         font-size: 35px;
     }
  }
+
