@@ -137,6 +137,13 @@ li{
         }
 
 
+        .service-card a {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: inherit;
+        }
+
+
 
         .btn_order{
             background-color: var(--osnovcolor) !important;
@@ -604,6 +611,10 @@ li{
     color: white;
 }
 
+.service-icon img{
+    width: 230px;
+}
+
 @media (max-width: 1200px) {
    .col-10 img{
            width: 100%;
@@ -651,6 +662,10 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
             .py-5{
                 padding-bottom: 0px !important;
+            }
+
+            .header_top button{
+                display: none !important;
             }
         }
         
